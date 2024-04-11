@@ -50,15 +50,33 @@ nav {
 
   .hamburgerBar {
     display: block;
-    width: 25px;
+    width: 30px;
     height: 4px;
     background-color: $colorVanilla;
     box-shadow: 0 4px 4px $colorGraphiteTransparent;
   }
 
-  :nth-child(2) {
-    margin: 6px 0;
+  :nth-child(1) {
+    margin-bottom: 9px;
   }
+  :nth-child(3) {
+    margin-top: 9px;
+  }
+}
+
+.hamburgerBtn.active .hamburgerBar:nth-child(2) {
+  opacity: 0;
+}
+.hamburgerBtn.active .hamburgerBar:nth-child(1) {
+  transform: translateY(13px) translateX(-5px) rotate(45deg);
+  width: 42.43px;
+}
+.hamburgerBtn.active .hamburgerBar:nth-child(3) {
+  transform: translateY(-13px) translateX(-5px) rotate(-45deg);
+  width: 42.43px;
+}
+.hamburgerBtn.active .hamburgerBar {
+  background-color: $colorSecondaryColor;
 }
 
 .navLinksContainer {
@@ -66,7 +84,7 @@ nav {
 }
 
 .navLinksContainerOpen {
-  background-color: $colorVanilla;
+  background-color: $colorVanillaNav;
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -78,11 +96,21 @@ nav {
   z-index: 1;
   display: flex;
   align-items: center;
-  list-style: none;
+
   flex-direction: column;
   justify-content: center;
-}
 
-.active {
-  background-color: red;
+  .navLinks {
+    list-style: none;
+    font-size: 36px;
+
+    li {
+      margin: 21px 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: $colorPrimaryColor;
+    }
+  }
 }

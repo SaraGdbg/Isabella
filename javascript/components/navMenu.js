@@ -1,9 +1,9 @@
 const hamburgerBtn = document.querySelector('#hamburgerBtn');
-const navLinks = document.querySelector('#navLinks');
+const navLinksContainer = document.querySelector('#navLinksContainer');
 
 export default function toggleNavMenu() {
   hamburgerBtn.addEventListener('click', () => {
-    navLinks.classList.toggle('navLinksContainerOpen');
+    navLinksContainer.classList.toggle('navLinksContainerOpen');
     hamburgerBtn.classList.toggle('active');
   });
 }
