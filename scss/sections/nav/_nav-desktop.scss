@@ -1,0 +1,59 @@
+header {
+  height: 613px;
+}
+
+nav {
+  flex-direction: column;
+  justify-content: space-between;
+  height: 613px;
+  h1 {
+    margin-left: 0;
+  }
+}
+
+.hamburgerBtn {
+  @include displayNone;
+}
+
+.navLinksContainerOpen {
+  background-color: #00000000;
+  width: auto;
+  height: auto;
+  position: relative;
+  top: auto;
+  margin: 0;
+}
+
+.navLinksContainer {
+  opacity: 100;
+  visibility: visible;
+  z-index: 1;
+  display: flex;
+  justify-self: flex-end;
+  align-items: flex-end;
+
+  text-shadow: 0 4px 4px $colorGraphiteTransparent;
+
+  .navLinks {
+    width: 98vw;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 0;
+    justify-self: flex-end;
+    font-size: 1.75rem;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    a {
+      color: $colorVanilla;
+    }
+
+    a:hover {
+      color: $colorBeachPeach;
+    }
+  }
+
+  .navMenuSurfboard {
+    @include displayNone;
+  }
+}
