@@ -1,5 +1,7 @@
 @import 'lib/variables';
 @import 'components/buttons';
+@import 'fonts/fontFamilies';
 body {
   background-color: $colorVanilla;
+  font-family: $fontRoboto;
 }
