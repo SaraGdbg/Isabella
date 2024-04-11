@@ -1,0 +1,5 @@
+@mixin displayNone {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
