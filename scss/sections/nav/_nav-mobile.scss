@@ -1,0 +1,125 @@
+header {
+  background-image: url('../../../assets/images/image_header.jpg');
+  height: 228px;
+  background-size: cover;
+  background-position: center;
+}
+nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    margin-top: 1.7rem;
+    margin-left: -4.5rem;
+    position: relative;
+    font-weight: 400;
+    text-shadow: 2px 2px 2px $colorGraphiteTransparent;
+
+    .navLogoQwitcher {
+      font-size: 5.938rem;
+      display: block;
+      color: $colorVanilla;
+    }
+    .navLogoRoboto {
+      font-size: 1.375rem;
+      color: $colorVanilla;
+      text-align: right;
+      text-transform: uppercase;
+      position: absolute;
+      right: 0;
+      margin-top: -1.4rem;
+    }
+  }
+}
+
+.hamburgerBtn {
+  background-color: #00000000;
+  //   color: none;
+  border: none;
+  height: 35px;
+  width: 35px;
+  padding: 5px;
+  padding-block: 0;
+  padding-inline: 0;
+  margin: 0;
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  z-index: 2;
+
+  .hamburgerBar {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: $colorVanilla;
+    box-shadow: 0 4px 4px $colorGraphiteTransparent;
+  }
+
+  :nth-child(1) {
+    margin-bottom: 9px;
+  }
+  :nth-child(3) {
+    margin-top: 9px;
+  }
+}
+
+.hamburgerBtn.active .hamburgerBar:nth-child(2) {
+  opacity: 0;
+}
+.hamburgerBtn.active .hamburgerBar:nth-child(1) {
+  transform: translateY(13px) translateX(-5px) rotate(45deg);
+  width: 42.43px;
+}
+.hamburgerBtn.active .hamburgerBar:nth-child(3) {
+  transform: translateY(-13px) translateX(-5px) rotate(-45deg);
+  width: 42.43px;
+}
+.hamburgerBtn.active .hamburgerBar {
+  background-color: $colorSecondaryColor;
+}
+
+.navLinksContainer {
+  @include displayNone;
+  .navLinks {
+    margin-top: 5rem;
+    list-style: none;
+    font-size: 2.25rem;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+
+    li {
+      margin: 21px 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: $colorSecondaryColor;
+    }
+  }
+
+  .navMenuSurfboard {
+    margin-top: -3.5rem;
+    margin-left: 13rem;
+  }
+}
+
+.navLinksContainerOpen {
+  background-color: $colorVanillaNav;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding-inline-start: 0;
+  opacity: 100;
+  visibility: visible;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+  justify-content: center;
+}

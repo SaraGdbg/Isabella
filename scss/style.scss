@@ -1,6 +1,10 @@
 @import 'lib/variables';
+@import 'lib/mixins';
 @import 'components/buttons';
+@import 'fonts/fontFamilies';
+@import 'sections/sections';
 body {
   background-color: $colorVanilla;
+  margin: 0;
   font-family: $fontRoboto;
 }
