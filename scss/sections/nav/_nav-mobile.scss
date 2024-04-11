@@ -11,6 +11,7 @@ nav {
 
   h1 {
     margin-top: 1.7rem;
+    margin-left: -4.5rem;
     position: relative;
     font-weight: 400;
     text-shadow: 2px 2px $colorGraphiteTransparent;
@@ -36,23 +37,26 @@ nav {
   background-color: #00000000;
   //   color: none;
   border: none;
-  height: 25px;
-  width: 25px;
-  padding: 0;
+  height: 35px;
+  width: 35px;
+  padding: 5px;
+  padding-block: 0;
+  padding-inline: 0;
   margin: 0;
   position: absolute;
-  right: 1rem;
-  top: 1rem;
-  :nth-child(2) {
-    background-color: black;
-    margin: 7.25px 0;
-  }
+  right: 1.5rem;
+  top: 1.5rem;
 
   .hamburgerBar {
     display: block;
     width: 25px;
-    height: 3.5px;
+    height: 4px;
     background-color: $colorVanilla;
+    box-shadow: 0 4px 4px $colorGraphiteTransparent;
+  }
+
+  :nth-child(2) {
+    margin: 6px 0;
   }
 }
 
