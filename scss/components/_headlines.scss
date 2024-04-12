@@ -1,0 +1,31 @@
+h2 {
+  font-family: $fontQwitcher;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: $colorSecondaryColor;
+}
+
+.h2Quote {
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+@media (min-width: $minSizeTablet) {
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.375rem;
+  }
+}
+
+@media (min-width: $minSizeDesktop) {
+  h2 {
+    font-size: 3.438rem;
+  }
+}
