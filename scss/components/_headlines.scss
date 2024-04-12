@@ -14,7 +14,7 @@ h3 {
   font-weight: 700;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $minSizeTablet) {
   h2 {
     font-size: 3rem;
   }
@@ -24,7 +24,7 @@ h3 {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $minSizeDesktop) {
   h2 {
     font-size: 3.438rem;
   }

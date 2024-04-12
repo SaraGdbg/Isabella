@@ -1,7 +1,7 @@
 @import 'nav-mobile';
-@media (min-width: 768px) {
+@media (min-width: $minSizeTablet) {
   @import 'nav-tablet';
 }
-@media (min-width: 1440px) {
+@media (min-width: $minSizeDesktop) {
   @import 'nav-desktop';
 }
