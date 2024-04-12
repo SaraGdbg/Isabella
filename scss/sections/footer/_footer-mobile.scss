@@ -1,4 +1,22 @@
 footer {
-    color: $colorPrimaryColor;
+	color: $colorVanilla;
 }
 
+.footerDiv {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: $colorPrimaryColor;
+	z-index: 10;
+
+	p {
+		margin-left: 1.7rem;
+		overflow-wrap: break-word;
+	}
+}
+
+.footerAddress {
+    white-space: pre-line;
+}
