@@ -1,13 +1,25 @@
+.disabled {
+  color: $colorSharkAttack;
+  background-color: $colorPrimaryColor;
+}
+
+.active {
+  color: $colorGraphite;
+  background-color: $colorBeachPeach;
+}
+
 button {
   border: 2px solid $colorPrimaryColor;
   background-color: $colorSecondaryColor;
 }
 
 input[type=reset], input[type=submit] {
+  font-size: 0.875rem;
+  font-weight: bold;
   width: 8.188rem;
   height: 2.5rem;
   border: none;
   border-radius: 10px;
-  background-color: $colorBeachPeach;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
+
