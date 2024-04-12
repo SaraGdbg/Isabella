@@ -1,0 +1,7 @@
+@import 'newsletter-mobile';
+@media (min-width: $minSizeTablet) {
+  @import 'newsletter-tablet';
+}
+@media (min-width: $minSizeDesktop) {
+  @import 'newsletter-desktop';
+}
