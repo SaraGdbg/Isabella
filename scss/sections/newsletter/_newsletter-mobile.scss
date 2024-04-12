@@ -1,0 +1,20 @@
+.newsletterFormContainer, .newsletterForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=text]{
+    height: 2.188rem;
+    width: 274px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    border: 3px solid $colorBeachPeach;
+    border-radius: 10px;
+    margin-bottom: 1.25rem;
+}
+
+input[type=reset], input[type=submit] {
+    //Todo in buttons section: add these inputs to buttons class
+}
