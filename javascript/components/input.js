@@ -21,4 +21,10 @@ export default function toggleFormBtnStatus (){
         sendBtn.classList.remove('activeBtn');
         sendBtn.classList.add('disabledBtn');
     })
+
+    sendBtn.addEventListener('click', () => {
+        sendBtn.classList.remove('activeBtn');
+        sendBtn.classList.add('disabledBtn');
+        inputs.forEach((field) => {field.value = ''})
+    })
 }
