@@ -1,10 +1,9 @@
 const nameInput = document.querySelector('#nameInput');
 const emailInput = document.querySelector('#emailInput');
 const sendBtn = document.querySelector('#sendBtn');
-const cancelBtn = document.querySelector('#cancelBtn');
 const inputs = document.querySelectorAll('input[type=text]');
 
-export default function toggleFormBtnStatus (){
+export function toggleFormBtnStatus (){
     inputs.forEach((field) => {
         field.addEventListener('keydown',() => {
             if (nameInput.value && emailInput.value) {
@@ -16,15 +15,15 @@ export default function toggleFormBtnStatus (){
             }
         });
     })
+}
 
-    cancelBtn.addEventListener('click', () => {
-        sendBtn.classList.remove('activeBtn');
-        sendBtn.classList.add('disabledBtn');
-    })
-
-    sendBtn.addEventListener('click', () => {
-        sendBtn.classList.remove('activeBtn');
-        sendBtn.classList.add('disabledBtn');
-        inputs.forEach((field) => {field.value = ''})
+export function resetFormValues () {
+    const buttons = document.querySelectorAll('.formBtn');
+    buttons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            sendBtn.classList.remove('activeBtn');
+            sendBtn.classList.add('disabledBtn');
+            inputs.forEach((field) => {field.value = ''})
+        })
     })
 }

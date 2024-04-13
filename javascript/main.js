@@ -1,8 +1,9 @@
 import '../scss/style.scss';
 import toggleNavMenu from './components/navMenu';
-import toggleFormBtnStatus from './components/input';
+import { toggleFormBtnStatus, resetFormValues }  from './components/input';
 
 toggleNavMenu();
 toggleFormBtnStatus();
+resetFormValues();
 
 console.log('bajs');
