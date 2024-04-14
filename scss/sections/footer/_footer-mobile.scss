@@ -11,6 +11,7 @@ footer {
 	background-color: $colorPrimaryColor;
 	z-index: 10;
 
+
 	p {
         font: $fontRoboto;
         font-weight: 500;
@@ -21,4 +22,8 @@ footer {
 
 .footerAddress {
     white-space: pre-line;
+}
+
+.footerEmailAddress {
+    color:$colorGraphite;
 }
