@@ -11,8 +11,10 @@ body {
   font-family: $fontRoboto;
 }
 
-.first-section {
-  height: 170px;
+.firstSection {
+  height: 160px;
+  width: 300px;
+  margin: 0 auto 0 auto;
 
   h2 {
     width: 225px;
@@ -25,12 +27,12 @@ body {
     position: relative;
   }
   
-  .svg-icon {
+  .svgIcon {
     width: 30px;
     height: 30px;
     position: relative;
     top: -30px;
-    left: 40px;
+    left: 5px;
   }
 }
 
