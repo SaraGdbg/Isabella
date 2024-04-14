@@ -1,45 +1,13 @@
 @import 'lib/variables';
 @import 'lib/mixins';
 @import 'components/buttons';
+@import 'components/headlines';
+@import 'components/underline';
 @import 'fonts/fontFamilies';
 @import 'sections/sections';
-@import 'components/headlines';
 
 body {
   background-color: $colorVanilla;
   margin: 0;
   font-family: $fontRoboto;
-}
-
-.first-section {
-  height: 170px;
-
-  h2 {
-    width: 225px;
-    margin: 0 auto 0 auto;
-    text-align: center;
-    color: $colorSecondaryColor;
-    font-family: $fontQwitcher;
-    font-size: 2.25rem;
-    margin-top: 20px;
-    position: relative;
-  }
-  
-  .svg-icon {
-    width: 30px;
-    height: 30px;
-    position: relative;
-    top: -30px;
-    left: 40px;
-  }
-}
-
-
-.underline {
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto 0 auto;
-  width: 58px;
-  height: 5px;
-  background-color: $colorSecondaryColor;
 }
