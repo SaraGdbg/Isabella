@@ -2,6 +2,13 @@ footer {
 	color: $colorVanilla;
 }
 
+p {
+  font-size: 14px;
+	font-weight: 400;
+	margin-left: 1.7rem;
+	overflow-wrap: break-word;
+}
+
 .footerDiv {
 	position: relative;
 	display: flex;
@@ -10,19 +17,29 @@ footer {
 	align-items: center;
 	background-color: $colorPrimaryColor;
 	z-index: 10;
+}
 
-	p {
-		font: $fontRoboto;
-		font-weight: 500;
-		margin-left: 1.7rem;
-		overflow-wrap: break-word;
-	}
+.footerEmail {
+font-weight: 700;
 }
 
 .footerAddress {
-	white-space: pre-line;
+  white-space: pre-line;
 }
 
-.footerEmailAddress {
-	color: $colorGraphite;
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footerEmailAddress,
+.footerEmailAddress:visited {
+  color: #383838;
+}
+
+.footerEmailAddress:focus,
+.footerEmailAddress:hover {
+  color: #F6F7F3;
 }
