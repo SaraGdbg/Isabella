@@ -1,16 +1,28 @@
+body {
+  overflow-x: hidden;
+}
+
+main {
+  @include flexColCentered;
+  overflow-x: hidden;
+}
+
 .reviewsSection {
   @include flexColCentered;
   margin-bottom: 2.5rem;
+  //   width: 100%;
+  overflow-x: hidden;
 }
 
 .reviewCarouselCardContainer {
   @include flexRowCentered;
   gap: 16px;
+  overflow-x: hidden;
 }
 
 .reviewCarouselCard {
   border: 3px solid $colorPrimaryColor;
-  border-radius: 16px;
+  border-radius: 10px;
   padding: 1rem;
   display: grid;
   grid-template-columns: 40% 60%;
@@ -38,5 +50,5 @@
 }
 
 .reviewCarouselCardContainer.sliding-transition {
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1s linear;
 }
