@@ -1,7 +1,4 @@
 @import 'cookies-mobile';
 @media (min-width: $minSizeTablet) {
-  @import 'cookies-tablet';
-}
-@media (min-width: $minSizeDesktop) {
-  @import 'cookies-desktop';
+  @import 'cookies-tablet-desktop';
 }
