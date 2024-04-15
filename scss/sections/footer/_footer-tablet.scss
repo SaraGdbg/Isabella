@@ -1,0 +1,13 @@
+  .footerContainer {
+    flex-direction: column;
+  }
+
+  p {
+    font-size: 18px;
+	}
+
+  .footerContact,
+  .footerEmail {
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 10px; /* Add bottom margin for separation */
+  }
