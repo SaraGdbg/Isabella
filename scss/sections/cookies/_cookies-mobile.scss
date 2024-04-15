@@ -1,0 +1,36 @@
+.cookieContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    height: 133px;
+    z-index: 11;
+    background-color: $colorBeachPeach;
+}
+
+.cookieText, .cookieBtns {
+    margin: 13px;
+    font-size: 0.875rem;
+    line-height: 1.026rem;
+    color: $colorGraphite;
+    .acceptBtn {
+        color: $colorVanilla;
+        background-color: $colorPrimaryColor;
+    }
+    .declineBtn {
+        color: $colorSecondaryColor;
+        background-color: $colorVanilla;
+    }
+    .bold {
+        font-weight: bold;
+        display: block;
+    }
+}
+
+.cookieBtns {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
