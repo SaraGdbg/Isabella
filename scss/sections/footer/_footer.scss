@@ -1,0 +1,7 @@
+@import 'footer-mobile';
+@media (min-width: 768px) {
+  @import 'footer-tablet';
+}
+@media (min-width: 1440px) {
+  @import 'footer-desktop';
+}
