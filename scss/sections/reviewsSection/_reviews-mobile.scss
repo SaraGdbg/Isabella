@@ -10,13 +10,12 @@ main {
 .reviewsSection {
   @include flexColCentered;
   margin-bottom: 2.5rem;
-  //   width: 100%;
   overflow-x: hidden;
 }
 
 .reviewCarouselCardContainer {
   @include flexRowCentered;
-  gap: 16px;
+  gap: 14px;
   overflow-x: hidden;
 }
 
@@ -25,20 +24,22 @@ main {
   border-radius: 10px;
   padding: 1rem;
   display: grid;
-  grid-template-columns: 40% 60%;
-  grid-template-rows: 50% 50%;
+  grid-template-columns: 90px 1fr;
+  grid-template-rows: 90px 1fr;
   grid-auto-flow: column;
-  height: 180px;
-  width: 234px;
+  height: 162px;
+  width: 236px;
   overflow-x: hidden;
 
   img {
     border-radius: 50%;
     width: 85px;
     height: 85px;
+    justify-self: center;
   }
   h3 {
     text-align: center;
+    margin-top: 0.2rem;
   }
 
   p {
