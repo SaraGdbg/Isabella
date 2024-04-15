@@ -1,0 +1,20 @@
+.carouselBottomDotsContainer {
+  @include flexRowCentered;
+  .carouselBottomDot {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin: 2rem 5px 0 5px;
+    background-color: $colorBeachPeach;
+  }
+
+  .carouselBottomDot.activeDot {
+    background-color: $colorPrimaryColor;
+  }
+}
+
+@media (min-width: $minSizeDesktop) {
+  .carouselBottomDotsContainer {
+    @include displayNone;
+  }
+}

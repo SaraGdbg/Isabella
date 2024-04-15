@@ -3,3 +3,16 @@
   opacity: 0;
   visibility: hidden;
 }
+
+@mixin flexRowCentered {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flexColCentered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
