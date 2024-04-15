@@ -6,6 +6,6 @@ import { toggleFormBtnStatus, resetFormValues } from './components/input';
 toggleNavMenu();
 toggleFormBtnStatus();
 resetFormValues();
-// reviewCarousel();
+reviewCarousel();
 
 console.log('bajs, for science');
