@@ -1,0 +1,7 @@
+@import 'reviews-mobile';
+@media (min-width: $minSizeTablet) {
+  @import 'reviews-tablet';
+}
+@media (min-width: $minSizeDesktop) {
+  @import 'reviews-desktop';
+}
