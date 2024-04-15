@@ -1,0 +1,39 @@
+.newsletterHeading {
+    line-height: 0.35;
+}
+
+.newsletterForm {
+    width: 17.5rem;
+}
+
+.newsletterFormContainer, .newsletterForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletterFormBtns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+    width: 100%;
+}
+
+input[type=text]{
+    height: 35px;
+    width: 234px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    border: 3px solid $colorBeachPeach;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+input[type=reset]{
+    grid-column: 1;
+}
+
+input[type=submit]{
+    grid-column: 2;
+}

@@ -7,3 +7,7 @@ body {
 .navLogoQwitcher {
   font-family: $fontQwitcher;
 }
+
+input[type=reset], input[type=submit] {
+  font-family: $fontRoboto;
+}
