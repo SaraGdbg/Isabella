@@ -1,0 +1,19 @@
+.reviewsSection {
+  @include flexColCentered;
+  margin-bottom: 2.5rem;
+}
+
+.reviewCarouselCardContainer {
+  @include flexRowCentered;
+  gap: 16px;
+}
+
+.reviewCarouselCard {
+  border: 3px solid $colorPrimaryColor;
+  border-radius: 16px;
+  padding: 1rem;
+
+  img {
+    border-radius: 50%;
+  }
+}
