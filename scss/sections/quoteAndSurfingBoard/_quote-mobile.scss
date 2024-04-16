@@ -34,10 +34,11 @@
 	display: grid;
 	grid-template-columns: auto 1fr auto;
 	align-items: center;
-	height: 15em;
+	height: 10em;
 	width: 15em;
 	flex-grow: 1;
-	margin-left: 10px;
+	margin-left: 1em;
+  margin-bottom: 1.5em;
 }
 
 .quote-text {
@@ -49,7 +50,6 @@
 
 .quote {
 	margin: 0;
-	height: 10em;
 	width: 4em;
 	font-family: $fontQwitcher;
 	color: $colorSecondaryColor;
@@ -59,13 +59,12 @@
 }
 
 .surfing-board {
-	width: 12em;
-	height: 11em;
+	width: 9em;
 	vertical-align: middle;
 	fill: currentColor;
 	overflow: hidden;
 	animation: wiggle 5s infinite;
-	margin-top: 10px;
+	margin-top: 4em;  
 }
 
 /* The wiggle animation */
