@@ -1,4 +1,44 @@
+.bqstart {
+	float: left;
+	height: 45px;
+	margin-top: -60px;
+	padding-top: 45px;
+	margin-bottom: -50px;
+	font-size: 500%;
+	color: $colorSecondaryColor;
+	justify-self: start;
+}
+
+.bqend {
+	float: right;
+	height: 25px;
+	margin-top: -124px;
+	padding-top: 45px;
+	font-size: 500%;
+	color: $colorSecondaryColor;
+	justify-self: end;
+	margin-right: -12px;
+}
+
+.quote-text {
+	justify-self: center;
+	font-size: 48px;
+	white-space: pre-line;
+	margin-left: 20px;
+}
+
+.quote {
+	margin: 0;
+	height: 10em;
+	width: 5em;
+}
+
 .surfing-board {
-    width: 13em;
-    height: 10em;
-  }
+	width: 15em;
+	height: 15em;
+	vertical-align: middle;
+	fill: currentColor;
+	overflow: hidden;
+	animation: wiggle 5s infinite;
+	margin-top: 2em;
+}
