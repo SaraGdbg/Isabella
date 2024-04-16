@@ -1,66 +1,66 @@
 .destinationSection {
-    @include flexColCentered;
+  width: 100%;
 
-    .destinationText {
-        display: flex;
-        width: 1200px;
-        line-height: 1.75rem;
-        gap: 70px;
-        letter-spacing: 4%;
+  .destinationText {
+    display: flex;
+    width: 1200px;
+    line-height: 1.75rem;
+    gap: 70px;
+    letter-spacing: 4%;
 
-        .leftText {
-            width: 495px;
-        }
-
-        .rightText {
-            width: 510px;
-        }
+    .leftText {
+      width: 495px;
     }
 
-    .destinationCards {
-        display: flex;
-        width: 1200px;
-        gap: 10px;
-        justify-content: space-around;
-        margin: 50px 0 70px 0;
-
-        .card {
-            width: 368px;
-            height: 512px;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            border: 2px $colorBeachPeach solid;
-            border-radius: 10px;
-            overflow: hidden;
-
-            img {
-                width: 368px;
-                height: 242px;
-            }
-
-            h3 {
-                margin-bottom: 0;
-                font-family: $fontRoboto;
-                font-weight: 700;
-            }
-
-            p {
-                width: 280px;
-                margin: 10px auto 50px auto;
-            }
-
-            button {
-                margin: 0 auto 0 auto;
-                width: 175px;
-                height: 55px;
-                border-radius: 10px;
-                color: white;
-                font-family: $fontRoboto;
-                font-size: 18px;
-                font-weight: 700;
-                background-color: $colorPrimaryColor;
-            }
-        }
+    .rightText {
+      width: 510px;
     }
+  }
+
+  .destinationCards {
+    display: flex;
+    width: 1200px;
+    gap: 10px;
+    justify-content: space-around;
+    margin: 50px 0 70px 0;
+
+    .card {
+      width: 368px;
+      height: 512px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      border: 2px $colorBeachPeach solid;
+      border-radius: 10px;
+      overflow: hidden;
+
+      img {
+        width: 368px;
+        height: 242px;
+      }
+
+      h3 {
+        margin-bottom: 0;
+        font-family: $fontRoboto;
+        font-weight: 700;
+      }
+
+      p {
+        width: 280px;
+        margin: 10px auto 50px auto;
+      }
+
+      button {
+        margin: 0 auto 0 auto;
+        width: 175px;
+        height: 55px;
+        border-radius: 10px;
+        color: white;
+        font-family: $fontRoboto;
+        font-size: 18px;
+        font-weight: 700;
+        background-color: $colorPrimaryColor;
+      }
+    }
+  }
 }

@@ -8,9 +8,6 @@ export default function colorCarouselDots(currentIndex, prevIndex, dotsClass) {
   let cIndex = currentIndex <= 2 ? currentIndex : 0;
   let pIndex = prevIndex <= 2 ? prevIndex : 0;
 
-  console.log(pIndex);
-  console.log(cIndex);
-
   carouselBottomDots[cIndex].classList.add('activeDot');
   carouselBottomDots[cIndex].classList.add('sliding-transition');
   carouselBottomDots[pIndex].classList.remove('activeDot');
