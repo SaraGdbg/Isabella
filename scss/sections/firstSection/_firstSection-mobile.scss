@@ -1,24 +1,24 @@
 .firstSection {
-    height: 160px;
-    width: 300px;
+  height: 160px;
+  width: 300px;
+  margin: 0 auto 0 auto;
+
+  h2 {
+    width: 225px;
     margin: 0 auto 0 auto;
-  
-    h2 {
-      width: 225px;
-      margin: 0 auto 0 auto;
-      text-align: center;
-      color: $colorSecondaryColor;
-      font-family: $fontQwitcher;
-      font-size: 2.25rem;
-      margin-top: 20px;
-      position: relative;
-    }
-    
-    .svgIcon {
-      width: 30px;
-      height: 30px;
-      position: relative;
-      top: -30px;
-      left: 5px;
-    }
+    text-align: center;
+    color: $colorSecondaryColor;
+    font-family: $fontQwitcher;
+    font-size: 2.25rem;
+    margin-top: 20px;
+    position: relative;
   }
+
+  .svgIcon {
+    width: 74px;
+    height: 74px;
+    position: relative;
+    top: -30px;
+    left: 5px;
+  }
+}

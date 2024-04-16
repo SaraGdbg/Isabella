@@ -1,8 +1,29 @@
 .underline {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto 0 auto;
+  width: 58px;
+  height: 3px;
+  background-color: $colorSecondaryColor;
+}
+
+@media (min-width: 744px) {
+  .underline {
     display: flex;
     flex-direction: row;
     margin: 0 auto 0 auto;
-    width: 58px;
-    height: 5px;
+    width: 145px;
+    height: 3px;
     background-color: $colorSecondaryColor;
   }
+}
+@media (min-width: 1440px) {
+  .underline {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto 0 auto;
+    width: 145px;
+    height: 3px;
+    background-color: $colorSecondaryColor;
+  }
+}
