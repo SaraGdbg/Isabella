@@ -1,0 +1,41 @@
+.cookieContainer {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 133px;
+    z-index: 11;
+    background-color: $colorBeachPeach;
+}
+
+.cookieText {
+    grid-column: 1;
+}
+
+.cookieBtns {
+    grid-column: 2;
+}
+
+.cookieText, .cookieBtns {
+    margin: 13px;
+    font-size: 0.875rem;
+    line-height: 1.026rem;
+    color: $colorGraphite;
+    .bold {
+        font-weight: bold;
+        display: block;
+    }
+    .br {
+        display: none;
+    }
+}
+
+.cookieBtns {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    margin-left: 13px;
+}

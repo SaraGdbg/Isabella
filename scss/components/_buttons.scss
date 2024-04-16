@@ -1,11 +1,32 @@
 button {
-  border: 2px solid $colorPrimaryColor;
-  background-color: $colorSecondaryColor;
+  font-size: 0.875rem;
+  letter-spacing: 0.0525rem;
+  font-weight: bold;
+  width: 131px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 7px;
+  margin-top: 7px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  @media (min-width: $minSizeTablet) {
+    font-size: 1.125rem;
+    letter-spacing: 0.0675rem;
+    width: 175px;
+    height: 55px;
+    margin-bottom: 13px;
+    margin-top: 13px;
+  }
+}
+
+.hamburgerBtn {
+  box-shadow: none;
 }
 
 .disabledBtn {
   color: $colorSharkAttack;
   background-color: $colorPrimaryColor;
+  box-shadow: none;
 }
 
 .activeBtn {
@@ -14,18 +35,47 @@ button {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
+.activeBtn:hover {
+  background-color: $colorSecondaryColor;
+}
+
+.acceptBtn {
+  color: $colorVanilla;
+  background-color: $colorPrimaryColor;
+}
+.declineBtn {
+  color: $colorSecondaryColor;
+  background-color: $colorVanilla;
+}
+
+.acceptBtn:hover {
+  background-color: $colorSecondaryColor;
+}
+
 input[type=reset] {
+  color: $colorGraphite;
   background-color: $colorBeachPeach;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
+input[type=reset]:hover {
+  background-color: $colorChoppyPeach;
+}
+
 input[type=reset], input[type=submit] {
   font-size: 0.875rem;
+  letter-spacing: 0.0525rem;
   font-weight: bold;
   width: 131px;
   height: 40px;
   border: none;
   border-radius: 10px;
   margin-bottom: 20px;
+  @media (min-width: $minSizeTablet) {
+    font-size: 1.125rem;
+    letter-spacing: 0.0675rem;
+    width: 175px;
+    height: 55px;
+    margin-bottom: 13px;
+  }
 }
-
