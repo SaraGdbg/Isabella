@@ -17,7 +17,7 @@ export default function startCarouselSlide(container, cards, dotsClass) {
   let carouselCards = document.querySelectorAll(cards);
   let totalCards = Object.keys(carouselCards).length;
 
-  sliding(carouselCardContainer, carouselCards, totalCards, dotsClass);
+  runCarouselSlide(carouselCardContainer, carouselCards, totalCards, dotsClass);
 }
 
 // Params:
@@ -26,7 +26,7 @@ export default function startCarouselSlide(container, cards, dotsClass) {
 // 3rd param is the length of the carouselCards array, is never recalculated
 // 4th param is the class of the dots that are to be recolored, should only be for one section.
 
-function sliding(carouselCardContainer, carouselCards, totalCards, dotsClass) {
+function runCarouselSlide(carouselCardContainer, carouselCards, totalCards, dotsClass) {
   // The reason for adding 2 clones here is to avoid the right side of the slide to be empty while the carousel is sliding. A second clone is needed for the positioning of the images to be consistent. They need to be uneven since the base number is 3. If 4 or possibly 5 items are present, this is not needed as long as a 2nd item is on the right side. It's not a pretty solution, but it works.
 
   let cloneNode = carouselCards[prevIndex];
@@ -70,9 +70,9 @@ function sliding(carouselCardContainer, carouselCards, totalCards, dotsClass) {
     }
     // call for the next slide to begin. This is an eternal loop :)
     setTimeout(() => {
-      callSlide(carouselCardContainer, carouselCards, totalCards, dotsClass);
+      restartCarousel(carouselCardContainer, carouselCards, totalCards, dotsClass);
     }, 1101);
-  }, 3000);
+  }, 8000);
 }
 
 // Params:
@@ -81,8 +81,8 @@ function sliding(carouselCardContainer, carouselCards, totalCards, dotsClass) {
 // 3rd param is the length of the carouselCards array, is never recalculated
 // 4th param is the class of the dots that are to be recolored, should only be for one section.
 
-function callSlide(carouselCardContainer, carouselCards, totalCards, dotsClass) {
+function restartCarousel(carouselCardContainer, carouselCards, totalCards, dotsClass) {
   setTimeout(() => {
-    sliding(carouselCardContainer, carouselCards, totalCards, dotsClass);
-  }, 3000);
+    runCarouselSlide(carouselCardContainer, carouselCards, totalCards, dotsClass);
+  }, 1000);
 }
