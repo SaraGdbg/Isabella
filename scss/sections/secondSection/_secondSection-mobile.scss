@@ -2,18 +2,26 @@
     width: 350px;
     margin: 0 auto 0 auto;
 
-    .topImageText {
+    .shortTopImageText {
         font-family: $fontRoboto;
         width: 350px;
         text-align: center;
         margin: 40px auto 0 auto;
         line-height: 2rem;
-      }
+    }
+
+    .longTopImageText {
+        @include displayNone;
+    }
 
     .topImage {
         height: 224px;
         width: 100%;
         margin: 40px auto 40px auto;
         border-radius: 10px;
+    }
+
+    .topImage2 {
+        @include displayNone;
     }
 }
