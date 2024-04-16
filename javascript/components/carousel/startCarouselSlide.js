@@ -35,14 +35,17 @@ function sliding(carouselCardContainer, carouselCards, totalCards, dotsClass) {
   let clone2 = cloneNode2.cloneNode(true);
 
   setTimeout(() => {
-    let carouselBottomDotsContainer = document.querySelector('.carouselBottomDotsContainer');
-    let style = window.getComputedStyle(carouselBottomDotsContainer);
-    let translateXValue = getTranslateXValue('#reviewCarouselCardContainer', '.reviewCarouselCard');
+    let containerId = `#${carouselCardContainer.id}`;
+    let cardsClass = `.${carouselCards[0].classList[0]}`;
+    let translateXValue = getTranslateXValue(containerId, cardsClass);
 
     // The comparasion between cardSize & translateXValue is made to avoid reassigning the value of cardSize constantly.
     if (cardSize !== translateXValue) {
       cardSize = translateXValue;
     }
+
+    let carouselBottomDotsContainer = document.querySelector('.carouselBottomDotsContainer');
+    let style = window.getComputedStyle(carouselBottomDotsContainer);
 
     if (style.getPropertyValue('opacity') === '1') {
       carouselCardContainer.classList.add('sliding-transition');
