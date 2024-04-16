@@ -41,6 +41,8 @@ export default function runCarouselSlide(carouselCardContainer, carouselCards, t
       carouselCardContainer.prepend(clone2);
 
       carouselCardContainer.style.transform = `translateX(-${cardSize}px)`;
+      // Call to function that changes color of the dots under the carousel.
+      colorCarouselDots(currentIndex + 1, prevIndex + 1, dotsClass);
       setTimeout(() => {
         // removing the cloned Node elements here before the rest of the logic is applied
         // console.log(carouselCardContainer);
@@ -49,8 +51,7 @@ export default function runCarouselSlide(carouselCardContainer, carouselCards, t
         carouselCardContainer.appendChild(carouselCards[prevIndex]);
         prevIndex = currentIndex;
         currentIndex = (currentIndex + 1) % totalCards;
-        // Call to function that changes color of the dots under the carousel.
-        colorCarouselDots(currentIndex, prevIndex, dotsClass);
+
         carouselCardContainer.classList.remove('sliding-transition');
         carouselCardContainer.style.transform = '';
       }, 1100);

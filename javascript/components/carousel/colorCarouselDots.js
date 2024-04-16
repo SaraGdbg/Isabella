@@ -5,7 +5,11 @@
 
 export default function colorCarouselDots(currentIndex, prevIndex, dotsClass) {
   const carouselBottomDots = document.querySelectorAll(dotsClass);
+  let cIndex = currentIndex <= 2 ? currentIndex : 0;
+  let pIndex = prevIndex <= 2 ? prevIndex : 0;
 
-  carouselBottomDots[currentIndex].classList.add('activeDot');
-  carouselBottomDots[prevIndex].classList.remove('activeDot');
+  carouselBottomDots[cIndex].classList.add('activeDot');
+  carouselBottomDots[cIndex].classList.add('sliding-transition');
+  carouselBottomDots[pIndex].classList.remove('activeDot');
+  carouselBottomDots[pIndex].classList.add('sliding-transition');
 }

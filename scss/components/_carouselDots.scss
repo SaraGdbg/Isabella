@@ -13,6 +13,30 @@
   }
 }
 
+.carouselBottomDot.activeDot.sliding-transition {
+  animation: toActiveDot 1s linear;
+}
+.carouselBottomDot.sliding-transition {
+  animation: toInactiveDot 1s linear;
+}
+
+@keyframes toActiveDot {
+  from {
+    background-color: $colorBeachPeach;
+  }
+  to {
+    background-color: $colorPrimaryColor;
+  }
+}
+@keyframes toInactiveDot {
+  from {
+    background-color: $colorPrimaryColor;
+  }
+  to {
+    background-color: $colorBeachPeach;
+  }
+}
+
 @media (min-width: $minSizeDesktop) {
   .carouselBottomDotsContainer {
     @include displayNone;
