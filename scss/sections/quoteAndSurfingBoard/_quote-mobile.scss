@@ -1,39 +1,80 @@
+.bqstart {
+	float: left;
+	height: 45px;
+	margin-top: -75px;
+	padding-top: 45px;
+	margin-bottom: -50px;
+	font-size: 500%;
+	color: $colorSecondaryColor;
+	justify-self: start;
+}
+
+.bqend {
+	float: right;
+	height: 25px;
+	margin-top: -110px;
+	padding-top: 45px;
+	font-size: 500%;
+	color: $colorSecondaryColor;
+	justify-self: end;
+  margin-right: -8px;
+  }
+
 .quoteAndBoardContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin: 50px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+	margin: 50px auto;
 }
 
 .quote-container {
-    height: 10em;
-    width: 13em;
-    flex-grow: 1;
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	align-items: center;
+	height: 15em;
+	width: 15em;
+	flex-grow: 1;
+  margin-left: 10px;
+}
+
+.quote-text {
+	justify-self: center; 
+	font-size: 36px;
+  white-space: pre-line;
+  margin-left: 20px;
 }
 
 .quote {
-    height: 10em;
-    font-family: $fontQwitcher;
-    font-size: 36px;
+	margin: 0;
+	height: 10em;
+	width: 4em;
+	font-family: $fontQwitcher;
+  color: $colorSecondaryColor;
+	font-size: 36px;
 	font-weight: 400;
-    color: $colorSecondaryColor;
-    white-space: pre-line;
+	white-space: pre-line;
 }
 
 .surfing-board {
-    width: 13em;
-    height: 10em;
-    vertical-align: middle;
-    fill: currentColor;
-    overflow: hidden;
-    animation: wiggle 5s infinite;
+	width: 13em;
+	height: 10em;
+	vertical-align: middle;
+	fill: currentColor;
+	overflow: hidden;
+	animation: wiggle 5s infinite;
 }
 
 /* The wiggle animation */
 @keyframes wiggle {
-    0%, 100% { transform: scaleX(-1) rotate(0deg); }
-    15%, 85% { transform: scaleX(-1) rotate(-15deg); }
-    50% { transform: scaleX(-1) rotate(0deg); }
+  0%, 100% {
+    transform:rotate(0deg);
+  }
+  15%, 85% {
+    transform:rotate(15deg);
+  }
+  50% {
+    transform:rotate(0deg);
+  }
 }
 
