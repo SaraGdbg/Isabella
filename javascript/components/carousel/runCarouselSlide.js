@@ -4,8 +4,8 @@ import getTranslateXValue from './getTranslateXValue';
 // currentIndex is the index of image that will display in center first
 // prevIndex is the index of image to the left of the center image
 let cardSize;
-let currentIndex = 1;
-let prevIndex = 0;
+// let currentIndex = 1;
+// let prevIndex = 0;
 
 // Params:
 // 1st param is the id of the carousel container, as a node object
@@ -13,9 +13,13 @@ let prevIndex = 0;
 // 3rd param is the length of the carouselCards array, is never recalculated
 // 4th param is the class of the dots that are to be recolored, should only be for one section.
 
-export default function runCarouselSlide(carouselCardContainer, carouselCards, totalCards, dotsClass) {
+export default function runCarouselSlide(carouselCardContainer, carouselCards, totalCards, dotsClass, currentI, prevI) {
   // The reason for adding 2 clones here is to avoid the right side of the slide to be empty while the carousel is sliding. A second clone is needed for the positioning of the images to be consistent. They need to be uneven since the base number is 3. If 4 or possibly 5 items are present, this is not needed as long as a 2nd item is on the right side. It's not a pretty solution, but it works.
   // console.log(carouselCardContainer);
+
+  let currentIndex = currentI;
+  let prevIndex = prevI;
+  console.log(currentIndex);
 
   let cloneNode = carouselCards[prevIndex];
   let cloneNode2 = carouselCards[currentIndex];
@@ -26,7 +30,6 @@ export default function runCarouselSlide(carouselCardContainer, carouselCards, t
     let containerId = `#${carouselCardContainer.id}`;
     let cardsClass = `.${carouselCards[0].classList[0]}`;
     let translateXValue = getTranslateXValue(containerId, cardsClass);
-    console.log(translateXValue);
 
     // The comparasion between cardSize & translateXValue is made to avoid reassigning the value of cardSize constantly.
     if (cardSize !== translateXValue) {
@@ -60,15 +63,15 @@ export default function runCarouselSlide(carouselCardContainer, carouselCards, t
     }
     // call for the next slide to begin. This is an eternal loop :)
     setTimeout(() => {
-      restartCarousel(carouselCardContainer, carouselCards, totalCards, dotsClass);
+      restartCarousel(carouselCardContainer, carouselCards, totalCards, dotsClass, currentIndex, prevIndex);
     }, 2101);
   }, 7000);
 }
 
 // Params: same as in runCarouselSlide function above
 
-function restartCarousel(carouselCardContainer, carouselCards, totalCards, dotsClass) {
+function restartCarousel(carouselCardContainer, carouselCards, totalCards, dotsClass, currentIndex, prevIndex) {
   setTimeout(() => {
-    runCarouselSlide(carouselCardContainer, carouselCards, totalCards, dotsClass);
+    runCarouselSlide(carouselCardContainer, carouselCards, totalCards, dotsClass, currentIndex, prevIndex);
   }, 1000);
 }

@@ -8,7 +8,7 @@ import destinationsCarousel from './components/carousel/destinationsCarousel';
 toggleNavMenu();
 toggleFormBtnStatus();
 resetFormValues();
-// reviewCarousel();
+reviewCarousel();
 destinationsCarousel();
 hideCookieBar();
 

@@ -10,5 +10,5 @@ export default function startCarouselSlide(container, cards, dotsClass) {
   let carouselCards = document.querySelectorAll(cards);
   let totalCards = Object.keys(carouselCards).length;
 
-  runCarouselSlide(carouselCardContainer, carouselCards, totalCards, dotsClass);
+  runCarouselSlide(carouselCardContainer, carouselCards, totalCards, dotsClass, 1, 0);
 }
