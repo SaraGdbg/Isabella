@@ -54,7 +54,7 @@ export default function reviewCarousel() {
   //     callSlide();
   //   }, 1000);
   // }, 3000);
-  startCarouselSlide('#reviewCarouselCardContainer', '.reviewCarouselCard', currentIndex, prevIndex);
+  startCarouselSlide('#reviewCarouselCardContainer', '.reviewCarouselCard');
 }
 
 function callSlide() {
