@@ -1,0 +1,39 @@
+.quoteAndBoardContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.quote-container {
+    height: 10em;
+    width: 13em;
+    flex-grow: 1;
+}
+
+.quote {
+    height: 10em;
+    font-family: $fontQwitcher;
+    font-size: 36px;
+	font-weight: 400;
+    color: $colorSecondaryColor;
+    white-space: pre-line;
+}
+
+.surfing-board {
+    width: 13em;
+    height: 10em;
+    vertical-align: middle;
+    fill: currentColor;
+    overflow: hidden;
+    animation: wiggle 5s infinite;
+}
+
+/* The wiggle animation */
+@keyframes wiggle {
+    0%, 100% { transform: scaleX(-1) rotate(0deg); }
+    15%, 85% { transform: scaleX(-1) rotate(-15deg); }
+    50% { transform: scaleX(-1) rotate(0deg); }
+}
+
