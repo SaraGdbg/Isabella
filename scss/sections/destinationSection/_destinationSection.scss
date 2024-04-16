@@ -1,0 +1,7 @@
+@import 'destinationSection-mobile';
+@media (min-width: 744px) {
+  @import 'destinationSection-tablet';
+}
+@media (min-width: 1440px) {
+  @import 'destinationSection-desktop';
+}
