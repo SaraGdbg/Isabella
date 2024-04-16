@@ -1,0 +1,24 @@
+.firstSection {
+    height: 215px;
+    width: 300px;
+    margin: 0 auto 0 auto;
+
+    h2 {
+        width: 300px;
+        margin: 0 auto 0 auto;
+        text-align: center;
+        color: $colorSecondaryColor;
+        font-family: $fontQwitcher;
+        font-size: 3rem;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .svgIcon {
+        width: 138px;
+        height: 118px;
+        position: relative;
+        top: -60px;
+        left: -90px;
+    }
+}

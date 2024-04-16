@@ -1,0 +1,24 @@
+.secondSection {
+    width: 559px;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+
+    .topImageText {
+        font-family: $fontRoboto;
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+        margin: 40px 0 40px 0;
+        line-height: 1.75rem;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+    .topImage {
+        height: 372px;
+        width: 100%;
+        margin: 40px auto 0 auto;
+        border-radius: 10px;
+    }
+}
