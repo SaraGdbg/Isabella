@@ -9,24 +9,26 @@
         letter-spacing: 4%;
 
         .leftText {
-            width: 495px;
+            @include displayNone
         }
 
         .rightText {
-            width: 510px;
+            @include displayNone
         }
     }
 
+    h2 {
+        margin: 30px 0 0 0;
+    }
     .destinationCards {
         display: flex;
         width: 1200px;
-        gap: 10px;
         justify-content: space-around;
-        margin: 50px 0 70px 0;
+        margin: 20px 0 70px 0;
 
         .card {
-            width: 368px;
-            height: 512px;
+            width: 274px;
+            height: 380px;
             display: flex;
             flex-direction: column;
             text-align: center;
@@ -35,8 +37,8 @@
             overflow: hidden;
 
             img {
-                width: 368px;
-                height: 242px;
+                width: 274px;
+                height: 182px;
             }
 
             h3 {
@@ -46,18 +48,20 @@
             }
 
             p {
-                width: 280px;
-                margin: 10px auto 50px auto;
+                width: 224px;
+                margin: 10px auto 10px auto;
+                font-size: 14px;
+                line-height: 28px;
             }
 
             button {
                 margin: 0 auto 0 auto;
-                width: 175px;
-                height: 55px;
+                width: 130px;
+                height: 40px;
                 border-radius: 10px;
                 color: white;
                 font-family: $fontRoboto;
-                font-size: 18px;
+                font-size: 14px;
                 font-weight: 700;
                 background-color: $colorPrimaryColor;
             }

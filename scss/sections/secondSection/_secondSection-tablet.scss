@@ -13,12 +13,20 @@
         line-height: 1.75rem;
         display: flex;
         flex-wrap: wrap;
-      }
+    }
+
+    .longTopImageText {
+        @include displayNone;
+    }
 
     .topImage {
         height: 372px;
         width: 100%;
         margin: 40px auto 0 auto;
         border-radius: 10px;
+    }
+
+    .topImage2 {
+        @include displayNone;
     }
 }
