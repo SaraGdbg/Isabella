@@ -1,0 +1,26 @@
+.NewsletterAndQuoteContainer {
+	@include flexColCentered;
+}
+
+.surfing-board {
+	width: 15em;
+	height: 15em;
+	margin-top: 4em;
+}
+
+.quote-container {
+  margin-bottom: 6em;
+}
+
+.quote-text {
+	font-size: 48px;
+}
+
+.quote {
+	width: 5em;
+}
+
+.bqend {
+	margin-top: -124px;
+	margin-right: -12px;
+}

@@ -1,0 +1,7 @@
+@import 'quote-mobile';
+@media (min-width: $minSizeTablet) {
+  @import 'quote-tablet';
+}
+@media (min-width: $minSizeDesktop) {
+  @import 'quote-desktop';
+}
