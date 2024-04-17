@@ -36,10 +36,11 @@ nav {
 
   .navLinks {
     width: 98vw;
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 70px;
     margin-bottom: 0;
-    justify-self: flex-end;
     font-size: 1.75rem;
     font-weight: 400;
     text-transform: uppercase;
