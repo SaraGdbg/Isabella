@@ -1,13 +1,25 @@
-  .footerContainer {
-    flex-direction: column;
-  }
+.footerContainer {
+  flex-direction: column;
+}
 
-  p {
-    font-size: 18px;
-	}
+.footerDiv {
+  height: 226px; 
+}
 
-  .footerContact,
-  .footerEmail {
-    margin-right: 0; /* Remove right margin */
-    margin-bottom: 10px; /* Add bottom margin for separation */
-  }
+p {
+  font-size: 18px;
+}
+
+.footerAddress {
+  white-space: pre-line;
+  margin: 20px 0 0 0;
+}
+
+.footerContact {
+  margin: 20px 0 0 0;
+}
+
+.footerEmail {
+  margin: 0 0 0 0;
+  text-decoration: none;
+}

@@ -1,12 +1,12 @@
 .firstSection {
-    height: 300px;
+    height: 348px;
     width: 900px;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 0 auto;
     @include flexColCentered;
 
     h2 {
         width: 900px;
-        margin: 0 auto 30px auto;
+        margin: 0 auto 40px auto;
         text-align: center;
         color: $colorSecondaryColor;
         font-family: $fontQwitcher;
@@ -14,9 +14,10 @@
     }
 
     .svgIcon {
-        width: 138px;
-        height: 118px;
+        width: 150px;
+        height: 125px;
         top: 0;
         left: 0;
+        margin: 0 auto 0 auto;
     }
 }
