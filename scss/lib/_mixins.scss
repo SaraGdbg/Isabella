@@ -4,6 +4,12 @@
   visibility: hidden;
 }
 
+@mixin displayVisible {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
 @mixin flexRowCentered {
   display: flex;
   flex-direction: row;
