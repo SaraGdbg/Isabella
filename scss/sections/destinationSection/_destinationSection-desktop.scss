@@ -10,10 +10,12 @@
 
         .leftText {
             width: 495px;
+            @include displayVisible;
         }
 
         .rightText {
             width: 510px;
+            @include displayVisible;
         }
     }
 

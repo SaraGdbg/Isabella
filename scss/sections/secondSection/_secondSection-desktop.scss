@@ -23,6 +23,7 @@
         text-align: center;
         margin: 40px auto 40px auto;
         line-height: 1.75rem;
+        @include displayVisible;
     }
 
     .images {
@@ -42,6 +43,7 @@
             height: 373px;
             width: 560px;
             border-radius: 10px;
+            @include displayVisible;
         }
     }
 
