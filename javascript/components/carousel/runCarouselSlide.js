@@ -15,11 +15,9 @@ let cardSize;
 
 export default function runCarouselSlide(carouselCardContainer, carouselCards, totalCards, dotsClass, currentI, prevI) {
   // The reason for adding 2 clones here is to avoid the right side of the slide to be empty while the carousel is sliding. A second clone is needed for the positioning of the images to be consistent. They need to be uneven since the base number is 3. If 4 or possibly 5 items are present, this is not needed as long as a 2nd item is on the right side. It's not a pretty solution, but it works.
-  // console.log(carouselCardContainer);
 
   let currentIndex = currentI;
   let prevIndex = prevI;
-  console.log(currentIndex);
 
   let cloneNode = carouselCards[prevIndex];
   let cloneNode2 = carouselCards[currentIndex];
@@ -50,7 +48,6 @@ export default function runCarouselSlide(carouselCardContainer, carouselCards, t
       colorCarouselDots(currentIndex + 1, prevIndex + 1, dotsClass);
       setTimeout(() => {
         // removing the cloned Node elements here before the rest of the logic is applied
-        // console.log(carouselCardContainer);
         carouselCardContainer.removeChild(carouselCardContainer.children[4]);
         carouselCardContainer.removeChild(carouselCardContainer.children[0]);
         carouselCardContainer.appendChild(carouselCards[prevIndex]);

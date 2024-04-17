@@ -11,5 +11,3 @@ resetFormValues();
 reviewCarousel();
 destinationsCarousel();
 hideCookieBar();
-
-console.log('bajs, for science');
