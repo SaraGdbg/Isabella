@@ -21,16 +21,20 @@
         font-size: 1.125rem;
         width: 900px;
         text-align: center;
-        margin: 40px auto 40px auto;
+        margin: 79px auto 40px auto;
         line-height: 1.75rem;
         @include displayVisible;
+        
+        .underline {
+            margin-top: 64px;
+        }
     }
 
     .images {
         display: flex;
         width: auto;
-        gap: 45px;
-        margin: 50px auto 50px auto;
+        gap: 40px;
+        margin: 30px auto 60px auto;
 
         .topImage {
             height: 373px;
