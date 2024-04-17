@@ -1,6 +1,12 @@
+.NewsletterAndQuoteContainer {
+	@include flexRowCentered;
+    padding-left: 4em;
+}
+
 .surfing-board {
 	width: 15em;
 	height: 15em;
+    padding-left: 2em;
 }
 
 .quote-text {

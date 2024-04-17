@@ -1,3 +1,7 @@
+.NewsletterAndQuoteContainer {
+	@include flexColCentered;
+}
+
 .bqstart {
 	float: left;
 	height: 45px;
@@ -38,7 +42,7 @@
 	width: 15em;
 	flex-grow: 1;
 	margin-left: 1em;
-  margin-bottom: 1.5em;
+	margin-bottom: 1.5em;
 }
 
 .quote-text {
@@ -64,7 +68,7 @@
 	fill: currentColor;
 	overflow: hidden;
 	animation: wiggle 5s infinite;
-	margin-top: 4em;  
+	margin-top: 4em;
 }
 
 /* The wiggle animation */
