@@ -59,22 +59,31 @@ nav {
 
   :nth-child(1) {
     margin-bottom: 9px;
+    transition: transform 0.3s ease-in-out;
+  }
+  :nth-child(2) {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
   }
   :nth-child(3) {
     margin-top: 9px;
+    transition: transform 0.3s ease-in-out;
   }
 }
 
 .hamburgerBtn.active .hamburgerBar:nth-child(2) {
   opacity: 0;
+  transition: opacity 0.3s ease-out;
 }
 .hamburgerBtn.active .hamburgerBar:nth-child(1) {
   transform: translateY(13px) translateX(-5px) rotate(45deg);
   width: 42.43px;
+  transition: transform 0.3s ease-in-out;
 }
 .hamburgerBtn.active .hamburgerBar:nth-child(3) {
   transform: translateY(-13px) translateX(-5px) rotate(-45deg);
   width: 42.43px;
+  transition: transform 0.3s ease-in-out;
 }
 .hamburgerBtn.active .hamburgerBar {
   background-color: $colorSecondaryColor;
@@ -114,7 +123,7 @@ nav {
   top: 0;
   margin: 0;
   padding-inline-start: 0;
-  opacity: 100;
+  opacity: 1;
   visibility: visible;
   z-index: 1;
   display: flex;
