@@ -12,14 +12,22 @@ p {
 
 .footerAddress {
   white-space: pre-line;
-  margin: 20px 0 0 0;
+  margin: 20px 0 20px 0;
+  font-weight: bold;
 }
 
 .footerContact {
   margin: 20px 0 0 0;
+  font-weight: bold;
 }
 
 .footerEmail {
   margin: 0 0 0 0;
   text-decoration: none;
+  font-weight: bold;
+}
+
+.copyright {
+  font-weight: bold;
+  margin-left: 0;
 }
