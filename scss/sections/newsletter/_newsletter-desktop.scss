@@ -7,3 +7,7 @@ input[type=submit]{
     grid-column: 2;
     margin-bottom: 0;
 }
+
+input[type=text]{
+    font-family: $fontRoboto;
+}

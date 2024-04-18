@@ -19,14 +19,15 @@
     .longTopImageText {
         font-family: $fontRoboto;
         font-size: 1.125rem;
-        width: 900px;
+        width: 1000px;
         text-align: center;
-        margin: 79px auto 40px auto;
+        margin: 40px auto 0 auto;
         line-height: 1.75rem;
         @include displayVisible;
+        white-space: pre;
         
         .underline {
-            margin-top: 64px;
+            margin-top: 5px;
         }
     }
 
@@ -34,7 +35,7 @@
         display: flex;
         width: auto;
         gap: 40px;
-        margin: 30px auto 60px auto;
+        margin: 10px auto 60px auto;
 
         .topImage {
             height: 373px;
