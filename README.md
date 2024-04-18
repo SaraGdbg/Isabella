@@ -58,6 +58,20 @@ ___
 ### Mobile
 ![App Screenshot](/assets/screenshots/Original-design/isabella_mobile.png)
 
+## Components
+![App Screenshot](/assets/screenshots/Components/Components.png)
+
+## Graphic Profile
+
+### Desktop
+![App Screenshot](/assets/screenshots/Graphic-profile/Graphic-profile-desktop.png)
+___
+### Tablet
+![App Screenshot](/assets/screenshots/Graphic-profile/Graphic-profile-tablet.png)
+___
+### Mobile
+![App Screenshot](/assets/screenshots/Graphic-profile/Graphic-profile-mobile.png)
+
 ## Final design
 *NB! there are animations on some sections, so they may differ from the original design*
 ### Desktop
