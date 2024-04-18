@@ -52,17 +52,19 @@ button {
   background-color: $colorSecondaryColor;
 }
 
-input[type=reset] {
+input[type='reset'] {
   color: $colorGraphite;
   background-color: $colorBeachPeach;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
-input[type=reset]:hover {
+input[type='reset']:hover {
   background-color: $colorChoppyPeach;
 }
 
-input[type=reset], input[type=submit] {
+input[type='reset'],
+input[type='submit'] {
   font-size: 0.875rem;
   letter-spacing: 0.0525rem;
   font-weight: bold;
@@ -71,6 +73,7 @@ input[type=reset], input[type=submit] {
   border: none;
   border-radius: 10px;
   margin-bottom: 20px;
+  cursor: pointer;
   @media (min-width: $minSizeTablet) {
     font-size: 1.125rem;
     letter-spacing: 0.0675rem;
@@ -78,4 +81,8 @@ input[type=reset], input[type=submit] {
     height: 55px;
     margin-bottom: 13px;
   }
+}
+
+input[type='submit'].disabledBtn {
+  cursor: default;
 }
